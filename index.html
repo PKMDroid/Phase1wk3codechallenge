@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flatadango - Movie Ticket App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>Flatadango</header>
+  <div id="app">
+    <!-- Left side: Movie list -->
+    <aside>
+      <h2>Now Showing</h2>
+      <ul id="films">
+        <li class="film item">Kimetsu no Yaiba: Infinity Castle Arc</li>
+        <li class="film item">Lilo & Stitch</li>
+        <li class="film item">Traumatika</li>
+        <li class="film item">Swiped</li>
+        <li class="film item">Stolen Girl</li>
+        <li class="film item">Request a Movie</li> <!-- New item -->
+      </ul>
+    </aside>
+
+    <!-- Right side: Movie details panel -->
+    <main id="movie-details">
+      <!-- Movie panels -->
+      <div class="movie-panel active" data-index="0">
+        <div class="overlay"></div>
+        <img src="https://danamic-media.danamic.org/danamic-production/2025/08/14042058/Demon-Slayer_-Kimetsu-no-Yaiba-Infinity-Castle-poster_Crop.jpg" alt="Kimetsu no Yaiba">
+        <h1>Kimetsu no Yaiba: Infinity Castle Arc</h1>
+        <p>Runtime: 2h 00m</p>
+        <p>Showtime: 7:30 PM</p>
+        <p>Available Tickets: 50</p>
+        <button>Buy Ticket</button>
+      </div>
+
+      <div class="movie-panel" data-index="1">
+        <div class="overlay"></div>
+        <img src="https://resizing.flixster.com/s87zsvJvel5yt1087hVcYxpRhpc=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p28572684_v_h9_aj.jpg" alt="Lilo & Stitch">
+        <h1>Lilo & Stitch</h1>
+        <p>Runtime: 1h 30m</p>
+        <p>Showtime: 5:00 PM</p>
+        <p>Available Tickets: 40</p>
+        <button>Buy Ticket</button>
+      </div>
+
+      <div class="movie-panel" data-index="2">
+        <div class="overlay"></div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS88vBFQSiM8tem8j4HGm1LbH9cvkGb1or9Mg&s" alt="Traumatika">
+        <h1>Traumatika</h1>
+        <p>Runtime: 1h 45m</p>
+        <p>Showtime: 6:45 PM</p>
+        <p>Available Tickets: 1</p>
+        <button>Buy Ticket</button>
+      </div>
+
+      <div class="movie-panel" data-index="3">
+        <div class="overlay"></div>
+        <img src="https://ntvb.tmsimg.com/assets/p30935942_v_h8_aa.jpg?w=1280&h=720" alt="Swiped">
+        <h1>Swiped</h1>
+        <p>Runtime: 1h 50m</p>
+        <p>Showtime: 8:00 PM</p>
+        <p>Available Tickets: 45</p>
+        <button>Buy Ticket</button>
+      </div>
+
+      <div class="movie-panel" data-index="4">
+        <div class="overlay"></div>
+        <img src="https://m.media-amazon.com/images/M/MV5BNDAzNzEzZTYtZTcwZi00MjBiLWIzMjEtYjljYTMyNTIzZjQzXkEyXkFqcGc@._V1_.jpg" alt="Stolen Girl">
+        <h1>Stolen Girl</h1>
+        <p>Runtime: 2h 10m</p>
+        <p>Showtime: 9:00 PM</p>
+        <p>Available Tickets: 30</p>
+        <button>Buy Ticket</button>
+      </div>
+
+      <!-- Request a Movie Panel -->
+      <div class="movie-panel" data-index="5">
+        <h1>Request a Movie</h1>
+        <p>Have a movie you want to see? Submit it below!</p>
+        <form id="request-form">
+          <input type="text" id="requested-movie" placeholder="Movie Title" required>
+          <button type="submit">Submit Request</button>
+        </form>
+        <p id="request-message"></p>
+      </div>
+    </main>
+  </div>
+
+  <!-- Link to external JS -->
+  <script src="index.js"></script>
+</body>
+</html>
